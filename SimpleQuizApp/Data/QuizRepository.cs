@@ -20,6 +20,5 @@ namespace SimpleQuizApp.Data
             var json = File.ReadAllText(_filePath);
             return JsonConvert.DeserializeObject<List<QuizQuestion>>(json);
         }
-
     }
 }

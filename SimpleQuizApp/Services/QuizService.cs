@@ -16,5 +16,18 @@ namespace SimpleQuizApp.Services
         {
             return _data.GetAllQuestions();
         }
+
+        public List<QuizQuestion> GetAllQuestionsByDifficulty(string difficulty)
+        {
+            return _data.GetAllQuestions().Where(q => q.Difficulty == difficulty).ToList();
+        }
+
+        public List<QuizQuestion> GetRandomQuestionsByDifficulty(string difficulty, int count)
+        {
+            var rnd = new Random();
+            var allQuestions = _data.GetAllQuestions().Where(q =>q.Difficulty == difficulty).ToList();
+            var randomQUestoins = allQuestions.OrderBy(q => rnd.Next()).Take(count).ToList();
+            return randomQUestoins;
+        }
     }
 }

@@ -15,7 +15,7 @@ namespace SimpleQuizApp.Controllers
 
         public IActionResult Index()
         {
-            var questions = _quizService.GetAllQuestions();
+            var questions = _quizService.GetRandomQuestionsByDifficulty("easy", 10);
             return View(questions);
         }
     }

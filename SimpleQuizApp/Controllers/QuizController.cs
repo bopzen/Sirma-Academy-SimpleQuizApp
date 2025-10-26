@@ -18,5 +18,12 @@ namespace SimpleQuizApp.Controllers
             var questions = _quizService.GetRandomQuestionsByDifficulty("easy", 10);
             return View(questions);
         }
+
+        public IActionResult Start(string difficulty)
+        {
+            ViewBag.Difficulty = difficulty;
+            var questions = _quizService.GetRandomQuestionsByDifficulty(difficulty, 10);
+            return View(questions);
+        }
     }
 }

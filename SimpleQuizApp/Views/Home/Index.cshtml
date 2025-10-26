@@ -1,8 +1,20 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Welcome to Simple Quiz App";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center mt-5">
+    <h1 class="display-4 mb-4">Welcome to Simple Quiz App</h1>
+    <p class="lead mb-4">Select your quiz difficulty to get started</p>
+
+    <div class="d-flex justify-content-center gap-3">
+        <a asp-controller="Quiz" asp-action="Start" asp-route-difficulty="easy" class="btn btn-primary btn-lg">
+            Easy
+        </a>
+        <a asp-controller="Quiz" asp-action="Start" asp-route-difficulty="medium" class="btn btn-warning btn-lg">
+            Medium
+        </a>
+        <a asp-controller="Quiz" asp-action="Start" asp-route-difficulty="hard" class="btn btn-danger btn-lg">
+            Hard
+        </a>
+    </div>
 </div>

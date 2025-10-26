@@ -1,4 +1,5 @@
 using SimpleQuizApp.Data;
+using SimpleQuizApp.Services;
 
 namespace SimpleQuizApp
 {
@@ -10,6 +11,7 @@ namespace SimpleQuizApp
 
 
             builder.Services.AddSingleton<QuizRepository>();
+            builder.Services.AddTransient<QuizService>();
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 

@@ -1,3 +1,5 @@
+using SimpleQuizApp.Data;
+
 namespace SimpleQuizApp
 {
     public class Program
@@ -6,6 +8,8 @@ namespace SimpleQuizApp
         {
             var builder = WebApplication.CreateBuilder(args);
 
+
+            builder.Services.AddSingleton<QuizRepository>();
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 

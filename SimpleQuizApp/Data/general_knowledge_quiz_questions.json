@@ -1,0 +1,1322 @@
+[
+  {
+    "question": "What is the capital city of France?",
+    "difficulty": "easy",
+    "options": [
+      {
+        "answer": "Paris",
+        "correct": true
+      },
+      {
+        "answer": "London",
+        "correct": false
+      },
+      {
+        "answer": "Rome",
+        "correct": false
+      },
+      {
+        "answer": "Madrid",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "difficulty": "easy",
+    "options": [
+      {
+        "answer": "Mars",
+        "correct": true
+      },
+      {
+        "answer": "Venus",
+        "correct": false
+      },
+      {
+        "answer": "Jupiter",
+        "correct": false
+      },
+      {
+        "answer": "Mercury",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "How many continents are there on Earth?",
+    "difficulty": "easy",
+    "options": [
+      {
+        "answer": "7",
+        "correct": true
+      },
+      {
+        "answer": "6",
+        "correct": false
+      },
+      {
+        "answer": "5",
+        "correct": false
+      },
+      {
+        "answer": "8",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "What color are bananas when they are ripe?",
+    "difficulty": "easy",
+    "options": [
+      {
+        "answer": "Yellow",
+        "correct": true
+      },
+      {
+        "answer": "Green",
+        "correct": false
+      },
+      {
+        "answer": "Red",
+        "correct": false
+      },
+      {
+        "answer": "Purple",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which animal is known as man's best friend?",
+    "difficulty": "easy",
+    "options": [
+      {
+        "answer": "Dog",
+        "correct": true
+      },
+      {
+        "answer": "Cat",
+        "correct": false
+      },
+      {
+        "answer": "Horse",
+        "correct": false
+      },
+      {
+        "answer": "Rabbit",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "How many legs does a spider have?",
+    "difficulty": "easy",
+    "options": [
+      {
+        "answer": "8",
+        "correct": true
+      },
+      {
+        "answer": "6",
+        "correct": false
+      },
+      {
+        "answer": "10",
+        "correct": false
+      },
+      {
+        "answer": "12",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which ocean is the largest?",
+    "difficulty": "easy",
+    "options": [
+      {
+        "answer": "Pacific Ocean",
+        "correct": true
+      },
+      {
+        "answer": "Atlantic Ocean",
+        "correct": false
+      },
+      {
+        "answer": "Indian Ocean",
+        "correct": false
+      },
+      {
+        "answer": "Arctic Ocean",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "What is 5 + 3?",
+    "difficulty": "easy",
+    "options": [
+      {
+        "answer": "8",
+        "correct": true
+      },
+      {
+        "answer": "9",
+        "correct": false
+      },
+      {
+        "answer": "7",
+        "correct": false
+      },
+      {
+        "answer": "10",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which month has 28 days?",
+    "difficulty": "easy",
+    "options": [
+      {
+        "answer": "All of them",
+        "correct": true
+      },
+      {
+        "answer": "February",
+        "correct": false
+      },
+      {
+        "answer": "June",
+        "correct": false
+      },
+      {
+        "answer": "April",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "What color is the sky on a clear day?",
+    "difficulty": "easy",
+    "options": [
+      {
+        "answer": "Blue",
+        "correct": true
+      },
+      {
+        "answer": "Green",
+        "correct": false
+      },
+      {
+        "answer": "Red",
+        "correct": false
+      },
+      {
+        "answer": "Purple",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which fruit is famous for keeping the doctor away?",
+    "difficulty": "easy",
+    "options": [
+      {
+        "answer": "Apple",
+        "correct": true
+      },
+      {
+        "answer": "Banana",
+        "correct": false
+      },
+      {
+        "answer": "Orange",
+        "correct": false
+      },
+      {
+        "answer": "Grape",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "What is the opposite of 'cold'?",
+    "difficulty": "easy",
+    "options": [
+      {
+        "answer": "Hot",
+        "correct": true
+      },
+      {
+        "answer": "Warm",
+        "correct": false
+      },
+      {
+        "answer": "Cool",
+        "correct": false
+      },
+      {
+        "answer": "Freezing",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which shape has three sides?",
+    "difficulty": "easy",
+    "options": [
+      {
+        "answer": "Triangle",
+        "correct": true
+      },
+      {
+        "answer": "Square",
+        "correct": false
+      },
+      {
+        "answer": "Rectangle",
+        "correct": false
+      },
+      {
+        "answer": "Circle",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "What do bees make?",
+    "difficulty": "easy",
+    "options": [
+      {
+        "answer": "Honey",
+        "correct": true
+      },
+      {
+        "answer": "Milk",
+        "correct": false
+      },
+      {
+        "answer": "Water",
+        "correct": false
+      },
+      {
+        "answer": "Juice",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which part of the plant absorbs water?",
+    "difficulty": "easy",
+    "options": [
+      {
+        "answer": "Roots",
+        "correct": true
+      },
+      {
+        "answer": "Leaves",
+        "correct": false
+      },
+      {
+        "answer": "Stem",
+        "correct": false
+      },
+      {
+        "answer": "Flower",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "How many colors are in a rainbow?",
+    "difficulty": "easy",
+    "options": [
+      {
+        "answer": "7",
+        "correct": true
+      },
+      {
+        "answer": "6",
+        "correct": false
+      },
+      {
+        "answer": "8",
+        "correct": false
+      },
+      {
+        "answer": "9",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which country is famous for pizza?",
+    "difficulty": "easy",
+    "options": [
+      {
+        "answer": "Italy",
+        "correct": true
+      },
+      {
+        "answer": "France",
+        "correct": false
+      },
+      {
+        "answer": "USA",
+        "correct": false
+      },
+      {
+        "answer": "Spain",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "What is the largest mammal?",
+    "difficulty": "easy",
+    "options": [
+      {
+        "answer": "Blue whale",
+        "correct": true
+      },
+      {
+        "answer": "Elephant",
+        "correct": false
+      },
+      {
+        "answer": "Giraffe",
+        "correct": false
+      },
+      {
+        "answer": "Rhino",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "What is H2O commonly known as?",
+    "difficulty": "easy",
+    "options": [
+      {
+        "answer": "Water",
+        "correct": true
+      },
+      {
+        "answer": "Oxygen",
+        "correct": false
+      },
+      {
+        "answer": "Hydrogen",
+        "correct": false
+      },
+      {
+        "answer": "Helium",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which day comes after Friday?",
+    "difficulty": "easy",
+    "options": [
+      {
+        "answer": "Saturday",
+        "correct": true
+      },
+      {
+        "answer": "Thursday",
+        "correct": false
+      },
+      {
+        "answer": "Sunday",
+        "correct": false
+      },
+      {
+        "answer": "Monday",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who wrote 'Romeo and Juliet'?",
+    "difficulty": "medium",
+    "options": [
+      {
+        "answer": "William Shakespeare",
+        "correct": true
+      },
+      {
+        "answer": "Charles Dickens",
+        "correct": false
+      },
+      {
+        "answer": "Jane Austen",
+        "correct": false
+      },
+      {
+        "answer": "Mark Twain",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "What is the smallest prime number?",
+    "difficulty": "medium",
+    "options": [
+      {
+        "answer": "2",
+        "correct": true
+      },
+      {
+        "answer": "1",
+        "correct": false
+      },
+      {
+        "answer": "3",
+        "correct": false
+      },
+      {
+        "answer": "5",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which element has the chemical symbol 'O'?",
+    "difficulty": "medium",
+    "options": [
+      {
+        "answer": "Oxygen",
+        "correct": true
+      },
+      {
+        "answer": "Gold",
+        "correct": false
+      },
+      {
+        "answer": "Osmium",
+        "correct": false
+      },
+      {
+        "answer": "Hydrogen",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "What is the largest desert in the world?",
+    "difficulty": "medium",
+    "options": [
+      {
+        "answer": "Sahara",
+        "correct": true
+      },
+      {
+        "answer": "Arabian",
+        "correct": false
+      },
+      {
+        "answer": "Gobi",
+        "correct": false
+      },
+      {
+        "answer": "Kalahari",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who painted the Mona Lisa?",
+    "difficulty": "medium",
+    "options": [
+      {
+        "answer": "Leonardo da Vinci",
+        "correct": true
+      },
+      {
+        "answer": "Michelangelo",
+        "correct": false
+      },
+      {
+        "answer": "Raphael",
+        "correct": false
+      },
+      {
+        "answer": "Donatello",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "In which year did World War II end?",
+    "difficulty": "medium",
+    "options": [
+      {
+        "answer": "1945",
+        "correct": true
+      },
+      {
+        "answer": "1939",
+        "correct": false
+      },
+      {
+        "answer": "1940",
+        "correct": false
+      },
+      {
+        "answer": "1942",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "What is the largest planet in our solar system?",
+    "difficulty": "medium",
+    "options": [
+      {
+        "answer": "Jupiter",
+        "correct": true
+      },
+      {
+        "answer": "Saturn",
+        "correct": false
+      },
+      {
+        "answer": "Earth",
+        "correct": false
+      },
+      {
+        "answer": "Neptune",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who discovered penicillin?",
+    "difficulty": "medium",
+    "options": [
+      {
+        "answer": "Alexander Fleming",
+        "correct": true
+      },
+      {
+        "answer": "Marie Curie",
+        "correct": false
+      },
+      {
+        "answer": "Isaac Newton",
+        "correct": false
+      },
+      {
+        "answer": "Albert Einstein",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "What is the square root of 64?",
+    "difficulty": "medium",
+    "options": [
+      {
+        "answer": "8",
+        "correct": true
+      },
+      {
+        "answer": "7",
+        "correct": false
+      },
+      {
+        "answer": "9",
+        "correct": false
+      },
+      {
+        "answer": "6",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which gas do plants absorb from the atmosphere?",
+    "difficulty": "medium",
+    "options": [
+      {
+        "answer": "Carbon Dioxide",
+        "correct": true
+      },
+      {
+        "answer": "Oxygen",
+        "correct": false
+      },
+      {
+        "answer": "Nitrogen",
+        "correct": false
+      },
+      {
+        "answer": "Hydrogen",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which country gifted the Statue of Liberty to the USA?",
+    "difficulty": "medium",
+    "options": [
+      {
+        "answer": "France",
+        "correct": true
+      },
+      {
+        "answer": "England",
+        "correct": false
+      },
+      {
+        "answer": "Germany",
+        "correct": false
+      },
+      {
+        "answer": "Canada",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who was the first man to walk on the Moon?",
+    "difficulty": "medium",
+    "options": [
+      {
+        "answer": "Neil Armstrong",
+        "correct": true
+      },
+      {
+        "answer": "Buzz Aldrin",
+        "correct": false
+      },
+      {
+        "answer": "Yuri Gagarin",
+        "correct": false
+      },
+      {
+        "answer": "Michael Collins",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which is the longest river in the world?",
+    "difficulty": "medium",
+    "options": [
+      {
+        "answer": "Nile",
+        "correct": true
+      },
+      {
+        "answer": "Amazon",
+        "correct": false
+      },
+      {
+        "answer": "Yangtze",
+        "correct": false
+      },
+      {
+        "answer": "Mississippi",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "In which country is the Great Barrier Reef located?",
+    "difficulty": "medium",
+    "options": [
+      {
+        "answer": "Australia",
+        "correct": true
+      },
+      {
+        "answer": "USA",
+        "correct": false
+      },
+      {
+        "answer": "Brazil",
+        "correct": false
+      },
+      {
+        "answer": "India",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which language has the most native speakers?",
+    "difficulty": "medium",
+    "options": [
+      {
+        "answer": "Mandarin Chinese",
+        "correct": true
+      },
+      {
+        "answer": "English",
+        "correct": false
+      },
+      {
+        "answer": "Spanish",
+        "correct": false
+      },
+      {
+        "answer": "Hindi",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which instrument measures atmospheric pressure?",
+    "difficulty": "medium",
+    "options": [
+      {
+        "answer": "Barometer",
+        "correct": true
+      },
+      {
+        "answer": "Thermometer",
+        "correct": false
+      },
+      {
+        "answer": "Hygrometer",
+        "correct": false
+      },
+      {
+        "answer": "Anemometer",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "What is the hardest natural substance on Earth?",
+    "difficulty": "medium",
+    "options": [
+      {
+        "answer": "Diamond",
+        "correct": true
+      },
+      {
+        "answer": "Gold",
+        "correct": false
+      },
+      {
+        "answer": "Iron",
+        "correct": false
+      },
+      {
+        "answer": "Quartz",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which continent is the Sahara Desert located on?",
+    "difficulty": "medium",
+    "options": [
+      {
+        "answer": "Africa",
+        "correct": true
+      },
+      {
+        "answer": "Asia",
+        "correct": false
+      },
+      {
+        "answer": "Australia",
+        "correct": false
+      },
+      {
+        "answer": "South America",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "How many bones are there in the adult human body?",
+    "difficulty": "medium",
+    "options": [
+      {
+        "answer": "206",
+        "correct": true
+      },
+      {
+        "answer": "210",
+        "correct": false
+      },
+      {
+        "answer": "196",
+        "correct": false
+      },
+      {
+        "answer": "201",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who was the first president of the United States?",
+    "difficulty": "medium",
+    "options": [
+      {
+        "answer": "George Washington",
+        "correct": true
+      },
+      {
+        "answer": "Abraham Lincoln",
+        "correct": false
+      },
+      {
+        "answer": "John Adams",
+        "correct": false
+      },
+      {
+        "answer": "Thomas Jefferson",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "What is the capital of Iceland?",
+    "difficulty": "hard",
+    "options": [
+      {
+        "answer": "Reykjavik",
+        "correct": true
+      },
+      {
+        "answer": "Oslo",
+        "correct": false
+      },
+      {
+        "answer": "Helsinki",
+        "correct": false
+      },
+      {
+        "answer": "Copenhagen",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who developed the theory of general relativity?",
+    "difficulty": "hard",
+    "options": [
+      {
+        "answer": "Albert Einstein",
+        "correct": true
+      },
+      {
+        "answer": "Isaac Newton",
+        "correct": false
+      },
+      {
+        "answer": "Niels Bohr",
+        "correct": false
+      },
+      {
+        "answer": "Stephen Hawking",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "What is the chemical symbol for potassium?",
+    "difficulty": "hard",
+    "options": [
+      {
+        "answer": "K",
+        "correct": true
+      },
+      {
+        "answer": "P",
+        "correct": false
+      },
+      {
+        "answer": "Pt",
+        "correct": false
+      },
+      {
+        "answer": "Po",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "In which year was the United Nations founded?",
+    "difficulty": "hard",
+    "options": [
+      {
+        "answer": "1945",
+        "correct": true
+      },
+      {
+        "answer": "1919",
+        "correct": false
+      },
+      {
+        "answer": "1950",
+        "correct": false
+      },
+      {
+        "answer": "1939",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who discovered the law of planetary motion?",
+    "difficulty": "hard",
+    "options": [
+      {
+        "answer": "Johannes Kepler",
+        "correct": true
+      },
+      {
+        "answer": "Galileo Galilei",
+        "correct": false
+      },
+      {
+        "answer": "Isaac Newton",
+        "correct": false
+      },
+      {
+        "answer": "Copernicus",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which element has the highest melting point?",
+    "difficulty": "hard",
+    "options": [
+      {
+        "answer": "Tungsten",
+        "correct": true
+      },
+      {
+        "answer": "Iron",
+        "correct": false
+      },
+      {
+        "answer": "Gold",
+        "correct": false
+      },
+      {
+        "answer": "Platinum",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "What is the smallest country in the world?",
+    "difficulty": "hard",
+    "options": [
+      {
+        "answer": "Vatican City",
+        "correct": true
+      },
+      {
+        "answer": "Monaco",
+        "correct": false
+      },
+      {
+        "answer": "San Marino",
+        "correct": false
+      },
+      {
+        "answer": "Liechtenstein",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "What does DNA stand for?",
+    "difficulty": "hard",
+    "options": [
+      {
+        "answer": "Deoxyribonucleic Acid",
+        "correct": true
+      },
+      {
+        "answer": "Dinucleic Acid",
+        "correct": false
+      },
+      {
+        "answer": "Deoxyribose Acid",
+        "correct": false
+      },
+      {
+        "answer": "Deoxy RNA",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who was the first woman to win a Nobel Prize?",
+    "difficulty": "hard",
+    "options": [
+      {
+        "answer": "Marie Curie",
+        "correct": true
+      },
+      {
+        "answer": "Rosalind Franklin",
+        "correct": false
+      },
+      {
+        "answer": "Ada Lovelace",
+        "correct": false
+      },
+      {
+        "answer": "Lise Meitner",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which planet has the most moons?",
+    "difficulty": "hard",
+    "options": [
+      {
+        "answer": "Saturn",
+        "correct": true
+      },
+      {
+        "answer": "Jupiter",
+        "correct": false
+      },
+      {
+        "answer": "Neptune",
+        "correct": false
+      },
+      {
+        "answer": "Uranus",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who composed the Four Seasons?",
+    "difficulty": "hard",
+    "options": [
+      {
+        "answer": "Antonio Vivaldi",
+        "correct": true
+      },
+      {
+        "answer": "Johann Bach",
+        "correct": false
+      },
+      {
+        "answer": "Beethoven",
+        "correct": false
+      },
+      {
+        "answer": "Mozart",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which scientist proposed the three laws of motion?",
+    "difficulty": "hard",
+    "options": [
+      {
+        "answer": "Isaac Newton",
+        "correct": true
+      },
+      {
+        "answer": "Galileo Galilei",
+        "correct": false
+      },
+      {
+        "answer": "Albert Einstein",
+        "correct": false
+      },
+      {
+        "answer": "Nikola Tesla",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "What is the currency of Switzerland?",
+    "difficulty": "hard",
+    "options": [
+      {
+        "answer": "Swiss Franc",
+        "correct": true
+      },
+      {
+        "answer": "Euro",
+        "correct": false
+      },
+      {
+        "answer": "Pound",
+        "correct": false
+      },
+      {
+        "answer": "Dollar",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Who was the Greek god of the sea?",
+    "difficulty": "hard",
+    "options": [
+      {
+        "answer": "Poseidon",
+        "correct": true
+      },
+      {
+        "answer": "Zeus",
+        "correct": false
+      },
+      {
+        "answer": "Hades",
+        "correct": false
+      },
+      {
+        "answer": "Apollo",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "What is the rarest blood type?",
+    "difficulty": "hard",
+    "options": [
+      {
+        "answer": "AB Negative",
+        "correct": true
+      },
+      {
+        "answer": "O Positive",
+        "correct": false
+      },
+      {
+        "answer": "A Negative",
+        "correct": false
+      },
+      {
+        "answer": "B Positive",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which country has the most volcanoes?",
+    "difficulty": "hard",
+    "options": [
+      {
+        "answer": "Indonesia",
+        "correct": true
+      },
+      {
+        "answer": "Japan",
+        "correct": false
+      },
+      {
+        "answer": "Iceland",
+        "correct": false
+      },
+      {
+        "answer": "Italy",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "What is the longest bone in the human body?",
+    "difficulty": "hard",
+    "options": [
+      {
+        "answer": "Femur",
+        "correct": true
+      },
+      {
+        "answer": "Tibia",
+        "correct": false
+      },
+      {
+        "answer": "Fibula",
+        "correct": false
+      },
+      {
+        "answer": "Humerus",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which planet is tilted on its side?",
+    "difficulty": "hard",
+    "options": [
+      {
+        "answer": "Uranus",
+        "correct": true
+      },
+      {
+        "answer": "Neptune",
+        "correct": false
+      },
+      {
+        "answer": "Saturn",
+        "correct": false
+      },
+      {
+        "answer": "Venus",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "What is the largest internal organ in the human body?",
+    "difficulty": "hard",
+    "options": [
+      {
+        "answer": "Liver",
+        "correct": true
+      },
+      {
+        "answer": "Lung",
+        "correct": false
+      },
+      {
+        "answer": "Heart",
+        "correct": false
+      },
+      {
+        "answer": "Kidney",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Which physicist is known for the uncertainty principle?",
+    "difficulty": "hard",
+    "options": [
+      {
+        "answer": "Werner Heisenberg",
+        "correct": true
+      },
+      {
+        "answer": "Erwin Schr\u00f6dinger",
+        "correct": false
+      },
+      {
+        "answer": "Max Planck",
+        "correct": false
+      },
+      {
+        "answer": "Albert Einstein",
+        "correct": false
+      }
+    ]
+  }
+]

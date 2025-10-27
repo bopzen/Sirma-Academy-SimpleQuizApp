@@ -1,0 +1,36 @@
+﻿@model SimpleQuizApp.Models.QuizResultViewModel
+
+<h2>Quiz Completed!</h2>
+<p>Your Score: @Model.Score / @Model.TotalQuestions</p>
+
+<table class="table table-bordered mt-4">
+    <thead class="table-dark">
+        <tr>
+            <th>Question</th>
+            <th>Your Answer</th>
+            <th>Result</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Results)
+        {
+            <tr>
+                <td>@item.Question</td>
+                <td>@item.UserAnswer</td>
+                <td>
+                    @if (item.IsCorrect)
+                    {
+                        <span class="text-success">Correct</span>
+                    }
+                    else
+                    {
+                        <span class="text-danger">Incorrect</span>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/" class="btn btn-success mt-3">Back to Home</a>
+

@@ -17,17 +17,21 @@ namespace SimpleQuizApp.Services
             return _data.GetAllQuestions();
         }
 
-        public List<QuizQuestion> GetAllQuestionsByDifficulty(string difficulty)
+        public QuizQuestion GetQuestionByIdWithRandomOptions(int id)
         {
-            return _data.GetAllQuestions().Where(q => q.Difficulty == difficulty).ToList();
+            var question = _data.GetAllQuestions().First(q => q.Id == id);
+            var rnd = new Random();
+            question.Options = question.Options.OrderBy(o => rnd.Next()).ToList();
+            return question;
         }
 
         public List<QuizQuestion> GetRandomQuestionsByDifficulty(string difficulty, int count)
         {
             var rnd = new Random();
             var allQuestions = _data.GetAllQuestions().Where(q =>q.Difficulty == difficulty).ToList();
-            var randomQUestoins = allQuestions.OrderBy(q => rnd.Next()).Take(count).ToList();
-            return randomQUestoins;
+            var randomQuestions = allQuestions.OrderBy(q => rnd.Next()).Take(count).ToList();
+
+            return randomQuestions;
         }
     }
 }

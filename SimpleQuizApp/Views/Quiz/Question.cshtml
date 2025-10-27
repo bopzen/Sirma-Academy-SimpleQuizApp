@@ -1,0 +1,21 @@
+﻿@model SimpleQuizApp.Models.QuestionViewModel
+
+<h1>General Knowledge Quiz - Level: @Model.Difficulty</h1>
+<h3>Question @Model.CurrentIndex of @Model.TotalQuestions</h3>
+
+<form method="post" asp-action="Question">
+    <p>@Model.Question</p>
+    @foreach (var option in Model.Options)
+    {
+        <div>
+            <input type="radio" name="SelectedAnswer" value="@option" required /> @option
+        </div>
+    }
+
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <input type="hidden" name="CurrentIndex" value="@Model.CurrentIndex" />
+
+    <button type="submit" class="btn btn-primary mt-3">Next</button>
+</form>
+
+<a asp-controller="Quiz" asp-action="Start" asp-route-difficulty="@Model.Difficulty" class="btn btn-success ms-2">Retake Quiz</a>

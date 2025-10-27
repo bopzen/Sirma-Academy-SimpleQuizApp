@@ -2,21 +2,30 @@
 
 <h2>Quiz Completed!</h2>
 <p>Your Score: @Model.Score / @Model.TotalQuestions</p>
+<p>Percent: @Model.Percentage %</p>
+<p>@Model.Comment</p>
 
 <table class="table table-bordered mt-4">
     <thead class="table-dark">
         <tr>
+            <th>No.</th>
             <th>Question</th>
             <th>Your Answer</th>
+            <th>Correct Answer</th>
             <th>Result</th>
         </tr>
     </thead>
     <tbody>
+        @{
+            var index = 1;
+        }
         @foreach (var item in Model.Results)
         {
             <tr>
+                <td>@index</td>
                 <td>@item.Question</td>
                 <td>@item.UserAnswer</td>
+                <td>@item.CorrectAnswer</td>
                 <td>
                     @if (item.IsCorrect)
                     {
@@ -28,9 +37,9 @@
                     }
                 </td>
             </tr>
+            index++;
         }
     </tbody>
 </table>
 
 <a href="/" class="btn btn-success mt-3">Back to Home</a>
-

@@ -92,14 +92,35 @@ namespace SimpleQuizApp.Controllers
                 {
                     Question = q.Question,
                     UserAnswer = userAnswer,
+                    CorrectAnswer = correctAnswer,
                     IsCorrect = isAnswerCorrect
                 });
+            }
+
+            var percentage = (double)score / (double)results.Count * 100;
+            string comment;
+            switch (percentage)
+            {
+                case < 50:
+                    comment = "Needs Improvement";
+                    break;
+                case < 75:
+                    comment = "Good Effort";
+                    break;
+                case < 90:
+                    comment = "Great Job";
+                    break;
+                default:
+                    comment = "Excellent!";
+                    break;
             }
 
             var model = new QuizResultViewModel
             {
                 Results = results,
                 Score = score,
+                Percentage = percentage,
+                Comment = comment,
                 TotalQuestions = results.Count
             };
 

@@ -1,11 +1,11 @@
 ﻿@model SimpleQuizApp.Models.QuizResultViewModel
 
-<h2>Quiz Completed!</h2>
-<p>Your Score: @Model.Score / @Model.TotalQuestions</p>
-<p>Percent: @Model.Percentage %</p>
-<p>@Model.Comment</p>
+<h1 class="display-4 mb-4">Quiz Completed!</h1>
+<p><span class="fw-bold">Your Score:</span> @Model.Score / @Model.TotalQuestions</p>
+<p><span class="fw-bold">Percent:</span> @Model.Percentage %</p>
+<h3>@Model.Comment</h3>
 
-<table class="table table-bordered mt-4">
+<table class="table table-striped shadow mt-4">
     <thead class="table-dark">
         <tr>
             <th>No.</th>
@@ -29,11 +29,11 @@
                 <td>
                     @if (item.IsCorrect)
                     {
-                        <span class="text-success">Correct</span>
+                        <span class="text-success fw-bold">Correct</span>
                     }
                     else
                     {
-                        <span class="text-danger">Incorrect</span>
+                        <span class="text-danger fw-bold">Incorrect</span>
                     }
                 </td>
             </tr>
@@ -42,4 +42,4 @@
     </tbody>
 </table>
 
-<a href="/" class="btn btn-success mt-3">Back to Home</a>
+<a href="/" class="shadow rounded-pill btn btn-success mt-3 fw-bold">Back to Home</a>

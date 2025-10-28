@@ -1,21 +1,24 @@
 ﻿@model SimpleQuizApp.Models.QuestionViewModel
 
-<h1>General Knowledge Quiz - Level: @Model.Difficulty</h1>
-<h3>Question @Model.CurrentIndex of @Model.TotalQuestions</h3>
+<h1 class="display-4 mb-4">General Knowledge Quiz - <span class="fw-normal">Level: @Model.Difficulty</span></h1>
+<h3 class="mb-4">Question @Model.CurrentIndex of @Model.TotalQuestions</h3>
 
 <form method="post" asp-action="Question">
-    <p>@Model.Question</p>
-    @foreach (var option in Model.Options)
-    {
-        <div>
-            <input type="radio" name="SelectedAnswer" value="@option" required /> @option
-        </div>
-    }
+    <p class="fw-bold">@Model.Question</p>
+    <div class="mb-4">
+        @foreach (var option in Model.Options)
+        {
+            <div class="border rounded-pill shadow w-50 mb-3 px-3 p-2">
+                <input class="me-2" type="radio" name="SelectedAnswer" value="@option" required /> @option
+            </div>
+        }
+    </div>
+
 
     <input type="hidden" name="Id" value="@Model.Id" />
     <input type="hidden" name="CurrentIndex" value="@Model.CurrentIndex" />
 
-    <button type="submit" class="btn btn-primary mt-3">Next</button>
+    <button type="submit" class="shadow rounded-pill btn btn-primary mt-3 w-25 fw-bold">Next</button>
 </form>
 
-<a asp-controller="Quiz" asp-action="Start" asp-route-difficulty="@Model.Difficulty" class="btn btn-success ms-2">Retake Quiz</a>
+<a asp-controller="Quiz" asp-action="Start" asp-route-difficulty="@Model.Difficulty" class="shadow rounded-pill btn btn-success mt-3 w-25 fw-bold">Retake Quiz</a>

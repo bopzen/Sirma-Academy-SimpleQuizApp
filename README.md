@@ -7,7 +7,8 @@
 - After completing the quiz a **detailed results page** is shown listing all questions with your answers and whether they were correct or not.
 
 ## Tech Description:
-- As per requirement no DB is used, the questions data is read from a **.json** file
+- As per requirement no DB is used, the questions data is read from a **JSON** file
+- The **JSON** file consists of **20 questions** per difficulty. Every time the quiz is started it takes **10 random** questions and also **shuffles** the answers.
 - The app uses typical **ASP.NET MVC** architecture with additional **Data layer** to access the data from the file and additional **Service** layer to operate with the data
 - **Sessions** were used to keep track of the answered questions between each question form submission
 - Simple custom **CSS** and **Bootstrap** used to style the app

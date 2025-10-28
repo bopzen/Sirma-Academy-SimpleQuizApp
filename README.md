@@ -28,3 +28,34 @@
 - **Razor Views**
 - **JSON File/In-Memory Data**
 - **Bootstrap / Custom CSS**
+
+## Simple Folder Structure:
+```
+SimpleQuizApp/
+├── Controllers/
+│   ├── HomeController.cs
+│   └── QuizController.cs
+├── Data
+│ 	├── Models/
+│	│	├── Option.cs
+│	│	└── QuizQuestion.cs
+│	├── QuizRepository.cs
+│	└── general_knowledge_quiz_questions.json
+├── Models/
+│	├── ErrorViewModel.cs
+│	├── QuestionViewModel.cs
+│	├── QuizResultItem.cs
+│   └── QuizResultViewModel.cs
+├── Services/
+│	└── QuizService.cs
+├── Views/
+│   ├── Home/
+│	│	└── Index.cshtml
+│   └── Quiz/
+│		├── Question.cshtml
+│		└── Result.cshtml
+├── wwwroot/
+│   ├── css/
+│   └── js/
+└── SimpleQuizApp.sln
+```

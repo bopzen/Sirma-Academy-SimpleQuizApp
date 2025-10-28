@@ -1,1 +1,30 @@
 # SimpleQuizApp
+## This is an exam project for Sirma Academy ASP.NET MVC Course
+
+## Project Description:
+- A web-based app **General Knowledge Quiz** built with **ASP.NET MVC**.
+- Choose from three difficulty levels — **Easy**, **Medium**, and **Hard** — each containing **10 random questions** based on the selected difficulty.
+- After completing the quiz a **detailed results page** is shown listing all questions with your answers and whether they were correct or not.
+
+## Tech Description:
+- As per requirement no DB is used, the questions data is read from a **.json** file
+- The app uses typical **ASP.NET MVC** architecture with additional **Data layer** to access the data from the file and additional **Service** layer to operate with the data
+- **Sessions** were used to keep track of the answered questions between each question form submission
+- Simple custom **CSS** and **Bootstrap** used to style the app
+
+## How to run the app locally:
+#### 1. Clone the Repository
+`git clone https://github.com/bopzen/Sirma-Academy-SimpleQuizApp.git`
+#### 2. Navigate into the Project Directory
+`..\SimpleQuizApp\`
+#### 3. Open the Project
+`Open the solution file (SimpleQuizApp.sln) in Visual Studio`
+#### 4. Build and Run
+`Press F5 or click Start Debugging to build and launch the app.`
+
+## Tech Stack: 
+- **ASP.NET Core MVC / .NET 8**
+- **C#**
+- **Razor Views**
+- **JSON File/In-Memory Data**
+- **Bootstrap / Custom CSS**

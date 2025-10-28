@@ -3,6 +3,14 @@
 <h1 class="display-4 mb-4">Quiz Completed!</h1>
 <p><span class="fw-bold">Your Score:</span> @Model.Score / @Model.TotalQuestions</p>
 <p><span class="fw-bold">Percent:</span> @Model.Percentage %</p>
+<p>
+    <span class="fw-bold">Time Spent:</span>
+    @{
+        var minutes = Model.TotalSeconds / 60;
+        var seconds = Model.TotalSeconds % 60;
+    }
+    @minutes min @seconds sec
+</p>
 <h3>@Model.Comment</h3>
 
 <table class="table table-striped shadow mt-4">

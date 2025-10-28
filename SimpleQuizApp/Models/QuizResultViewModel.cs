@@ -7,5 +7,6 @@
         public double Percentage { get; set; }
         public string Comment { get; set; }
         public int TotalQuestions { get; set; }
+        public int TotalSeconds { get; set; }
     }
 }

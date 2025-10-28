@@ -1,7 +1,11 @@
 ﻿@model SimpleQuizApp.Models.QuestionViewModel
 
 <h1 class="display-4 mb-4">General Knowledge Quiz - <span class="fw-normal">Level: @Model.Difficulty</span></h1>
-<h3 class="mb-4">Question @Model.CurrentIndex of @Model.TotalQuestions</h3>
+<h3 class="mb-2">Question @Model.CurrentIndex of @Model.TotalQuestions</h3>
+
+<div class="text-center fw-bold border-bottom mb-3 pb-2">
+    Time Remaining: <span id="timer"></span>
+</div>
 
 <form method="post" asp-action="Question">
     <p class="fw-bold">@Model.Question</p>
@@ -22,3 +26,25 @@
 </form>
 
 <a asp-controller="Quiz" asp-action="Start" asp-route-difficulty="@Model.Difficulty" class="shadow rounded-pill btn btn-success mt-3 w-25 fw-bold">Retake Quiz</a>
+
+@section Scripts {
+    <script>
+        let seconds = @Model.RemainingSeconds;
+        const timer = document.getElementById("timer");
+
+        function updateTimer() {
+            if (seconds <= 0) {
+                window.location.href = '@Url.Action("Result")';
+                return;
+            }
+
+            const min = Math.floor(seconds / 60);
+            const sec = seconds % 60;
+            timer.textContent = `${min}:${sec.toString().padStart(2, '0')}`;
+            seconds--;
+        }
+
+        updateTimer();
+        setInterval(updateTimer, 1000);
+    </script>
+}

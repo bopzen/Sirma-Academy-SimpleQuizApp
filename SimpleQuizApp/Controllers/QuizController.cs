@@ -18,6 +18,8 @@ namespace SimpleQuizApp.Controllers
         public IActionResult Start(string difficulty)
         {
             QuizState.ResetAnswers();
+            QuizTime.ResetTimer();
+            QuizTime.StartTimer();
             ViewBag.Difficulty = difficulty;
             var questions = _quizService.GetRandomQuestionsByDifficulty(difficulty, QuestionCount);
 
@@ -43,7 +45,8 @@ namespace SimpleQuizApp.Controllers
                 Difficulty = question.Difficulty,
                 Options = question.Options.Select(o => o.Answer).ToList(),
                 CurrentIndex = index + 1,
-                TotalQuestions = QuestionCount
+                TotalQuestions = QuestionCount,
+                RemainingSeconds = QuizTime.GetRemainingSeconds()
             };
 
             return View(model);
@@ -64,6 +67,8 @@ namespace SimpleQuizApp.Controllers
 
         public IActionResult Result()
         {
+            var totalSeconds = QuizTime.GetTotalSeconds();
+            QuizTime.ResetTimer();
             var questions = _quizService.GetAllQuestions()
                 .Where(q => QuizState.QuestionIds.Contains(q.Id))
                 .OrderBy(q => QuizState.QuestionIds.IndexOf(q.Id))
@@ -74,7 +79,10 @@ namespace SimpleQuizApp.Controllers
 
             foreach (var q in questions)
             {
-                var userAnswer = QuizState.Answers[q.Id];
+                if (!QuizState.Answers.TryGetValue(q.Id, out var userAnswer))
+                {
+                    userAnswer = "Not answered";
+                }
                 var correctAnswer = q.Options.First(o => o.IsCorrect).Answer;
                 bool isAnswerCorrect = userAnswer == correctAnswer;
 
@@ -116,7 +124,8 @@ namespace SimpleQuizApp.Controllers
                 Score = score,
                 Percentage = percentage,
                 Comment = comment,
-                TotalQuestions = results.Count
+                TotalQuestions = results.Count,
+                TotalSeconds = totalSeconds
             };
 
             return View(model);

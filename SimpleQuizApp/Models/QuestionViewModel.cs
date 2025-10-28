@@ -9,5 +9,6 @@
         public string SelectedAnswer { get; set; }
         public int CurrentIndex { get; set; }
         public int TotalQuestions { get; set; }
+        public int RemainingSeconds { get; set; }
     }
 }

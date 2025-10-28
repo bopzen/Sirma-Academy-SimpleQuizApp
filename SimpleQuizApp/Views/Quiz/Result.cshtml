@@ -1,9 +1,9 @@
 ﻿@model SimpleQuizApp.Models.QuizResultViewModel
 
 <h1 class="display-4 mb-4">Quiz Completed!</h1>
-<p><span class="fw-bold">Your Score:</span> @Model.Score / @Model.TotalQuestions</p>
-<p><span class="fw-bold">Percent:</span> @Model.Percentage %</p>
-<p>
+<p class="mb-0"><span class="fw-bold">Your Score:</span> @Model.Score / @Model.TotalQuestions</p>
+<p class="mb-0"><span class="fw-bold">Percent:</span> @Model.Percentage %</p>
+<p class="mb-2">
     <span class="fw-bold">Time Spent:</span>
     @{
         var minutes = Model.TotalSeconds / 60;
@@ -50,4 +50,4 @@
     </tbody>
 </table>
 
-<a href="/" class="shadow rounded-pill btn btn-success mt-3 fw-bold">Back to Home</a>
+<a href="/" class="shadow rounded-pill btn btn-success mt-3 fw-bold w-25">Back to Home</a>

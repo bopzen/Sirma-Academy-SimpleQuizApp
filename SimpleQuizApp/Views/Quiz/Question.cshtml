@@ -12,9 +12,9 @@
     <div class="mb-4">
         @foreach (var option in Model.Options)
         {
-            <div class="border rounded-pill shadow w-50 mb-3 px-3 p-2">
+            <label class="border rounded-pill shadow w-50 mb-3 px-3 p-2">
                 <input class="me-2" type="radio" name="SelectedAnswer" value="@option" required /> @option
-            </div>
+            </label>
         }
     </div>
 
@@ -36,6 +36,12 @@
             if (seconds <= 0) {
                 window.location.href = '@Url.Action("Result")';
                 return;
+            }
+
+            if (seconds <= 30) {
+            timer.style.color = "red";
+            } else {
+                timer.style.color = "";
             }
 
             const min = Math.floor(seconds / 60);

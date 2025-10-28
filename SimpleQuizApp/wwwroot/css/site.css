@@ -20,3 +20,8 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+label:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+}

@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SimpleQuizApp.Data.Models;
 using SimpleQuizApp.Models;
 using SimpleQuizApp.Services;
 
@@ -9,7 +8,6 @@ namespace SimpleQuizApp.Controllers
     public class QuizController : Controller
     {
         private readonly QuizService _quizService;
-        private const string QuestionIdsKey = "QuestionIds";
         private const int QuestionCount = 10;
 
         public QuizController(QuizService quizService)
@@ -19,11 +17,11 @@ namespace SimpleQuizApp.Controllers
 
         public IActionResult Start(string difficulty)
         {
-            ClearSession();
+            QuizState.ResetAnswers();
             ViewBag.Difficulty = difficulty;
             var questions = _quizService.GetRandomQuestionsByDifficulty(difficulty, QuestionCount);
 
-            SaveQuestionIdsToSession(questions);
+            QuizState.QuestionIds = questions.Select(q => q.Id).ToList();
 
             return RedirectToAction("Question", new { index = 0 });
 
@@ -31,14 +29,12 @@ namespace SimpleQuizApp.Controllers
 
         public IActionResult Question(int index)
         {
-            var questionIds = GetQuestionIdsFromSession();
-
             if (index >= QuestionCount)
             {
                 return RedirectToAction("Result");
             }
-
-            var question = _quizService.GetQuestionByIdWithRandomOptions(questionIds[index]);
+            var questionId = QuizState.QuestionIds[index];
+            var question = _quizService.GetQuestionByIdWithRandomOptions(questionId);
 
             var model = new QuestionViewModel
             {
@@ -56,7 +52,7 @@ namespace SimpleQuizApp.Controllers
         [HttpPost]
         public IActionResult Question(QuestionViewModel model)
         {
-            SaveAnswerToSession(model.Id, model.SelectedAnswer);
+            QuizState.Answers[model.Id] = model.SelectedAnswer;
 
             if (model.CurrentIndex >= QuestionCount)
             {
@@ -68,10 +64,9 @@ namespace SimpleQuizApp.Controllers
 
         public IActionResult Result()
         {
-            var questionIds = GetQuestionIdsFromSession();
             var questions = _quizService.GetAllQuestions()
-                .Where(q => questionIds.Contains(q.Id))
-                .OrderBy(q => questionIds.IndexOf(q.Id))
+                .Where(q => QuizState.QuestionIds.Contains(q.Id))
+                .OrderBy(q => QuizState.QuestionIds.IndexOf(q.Id))
                 .ToList();
 
             var results = new List<QuizResultItem>();
@@ -79,7 +74,7 @@ namespace SimpleQuizApp.Controllers
 
             foreach (var q in questions)
             {
-                var userAnswer = GetAnswerFromSession(q.Id);
+                var userAnswer = QuizState.Answers[q.Id];
                 var correctAnswer = q.Options.First(o => o.IsCorrect).Answer;
                 bool isAnswerCorrect = userAnswer == correctAnswer;
 
@@ -102,16 +97,16 @@ namespace SimpleQuizApp.Controllers
             switch (percentage)
             {
                 case < 50:
-                    comment = "Needs Improvement";
+                    comment = "Oh no, your general knowledge is bad!";
                     break;
                 case < 75:
-                    comment = "Good Effort";
+                    comment = "Good Effort but you still need to improve!";
                     break;
                 case < 90:
-                    comment = "Great Job";
+                    comment = "Great Job! You almost got it right.";
                     break;
                 default:
-                    comment = "Excellent!";
+                    comment = "Excellent, you are a genious!";
                     break;
             }
 
@@ -125,35 +120,6 @@ namespace SimpleQuizApp.Controllers
             };
 
             return View(model);
-        }
-
-
-        private void ClearSession()
-        {
-            HttpContext.Session.Clear();
-        }
-
-        private void SaveQuestionIdsToSession(List<QuizQuestion> questions)
-        {
-            HttpContext.Session.SetString(QuestionIdsKey, string.Join(",", questions.Select(q => q.Id)));
-        }
-        private List<int> GetQuestionIdsFromSession()
-        {
-            var questionIds = HttpContext.Session.GetString(QuestionIdsKey)
-                .Split(',')
-                .Select(int.Parse)
-                .ToList();
-            return questionIds;
-        }
-
-        private void SaveAnswerToSession(int id, string selectedAnswe)
-        {
-            HttpContext.Session.SetString($"Answer_{id}", selectedAnswe);
-        }
-
-        private string GetAnswerFromSession(int id)
-        {
-            return HttpContext.Session.GetString($"Answer_{id}");
         }
     }
 }

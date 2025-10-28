@@ -65,3 +65,11 @@ SimpleQuizApp/
 │   └── js/
 └── SimpleQuizApp.sln
 ```
+
+## Preview:
+#### Home Page:
+<img width="1912" height="907" alt="Screenshot 2025-10-28 234743" src="https://github.com/user-attachments/assets/5ae8b169-4f22-4311-804b-3966d0ec9689" />
+#### Questions Page:
+<img width="1913" height="905" alt="Screenshot 2025-10-28 234804" src="https://github.com/user-attachments/assets/1006b2d5-8b3e-41fd-85f1-87521d5124a7" />
+#### Results Page:
+<img width="1919" height="911" alt="Screenshot 2025-10-28 235023" src="https://github.com/user-attachments/assets/714dd2a4-e2c8-4c32-8f88-0ede5a3ad8c5" />

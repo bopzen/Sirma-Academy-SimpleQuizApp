@@ -7,9 +7,9 @@ namespace SimpleQuizApp.Data
     {
         private readonly string _filePath;
 
-        public QuizRepository()
+        public QuizRepository(IConfiguration configuration)
         {
-            _filePath = "Data/general_knowledge_quiz_questions.json";
+             _filePath = configuration["FilePath"] ?? throw new Exception("Quiz file path not configured.");
         }
 
         public List<QuizQuestion> GetAllQuestions()

@@ -69,12 +69,12 @@ SimpleQuizApp/
 ## Preview:
 #### Home Page:
 
-<img width="1912" height="907" alt="Screenshot 2025-10-28 234743" src="https://github.com/user-attachments/assets/5ae8b169-4f22-4311-804b-3966d0ec9689" />
+<img width="1799" height="937" alt="Screenshot 2025-10-29 130104" src="https://github.com/user-attachments/assets/4613b15a-ce81-4a2e-820b-b49dd7c3e6c3" />
 
 #### Questions Page:
 
-<img width="1913" height="905" alt="Screenshot 2025-10-28 234804" src="https://github.com/user-attachments/assets/1006b2d5-8b3e-41fd-85f1-87521d5124a7" />
+<img width="1801" height="936" alt="Screenshot 2025-10-29 130128" src="https://github.com/user-attachments/assets/9fff0f8c-e424-4356-95f5-f90c69d3c615" />
 
 #### Results Page:
 
-<img width="1919" height="911" alt="Screenshot 2025-10-28 235023" src="https://github.com/user-attachments/assets/714dd2a4-e2c8-4c32-8f88-0ede5a3ad8c5" />
+<img width="1799" height="935" alt="Screenshot 2025-10-29 130155" src="https://github.com/user-attachments/assets/e925e35a-2745-40e5-beab-35ed9db05354" />

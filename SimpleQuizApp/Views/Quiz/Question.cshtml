@@ -10,9 +10,21 @@
 <div class="d-flex justify-content-between align-items-center mb-3">
     @for (int i = 1; i <= Model.TotalQuestions; i++)
     {
-        var isCompleted = i <= Model.CurrentIndex;
+        var isCompleted = i < Model.CurrentIndex;
+        var isCurrent = i == Model.CurrentIndex;
         <div class="flex-fill mx-1">
-            <div class="text-center py-1 rounded fw-bold @(isCompleted ? "bg-secondary text-white" : "border border-secondary text-secondary")">@i</div>
+            @if (isCompleted)
+            {
+                <div class="text-center py-1 rounded fw-bold bg-secondary border border-secondary text-white">@i</div>
+            }
+            else if (isCurrent)
+            {
+                <div class="text-center py-2 rounded fw-bold bg-success border border-success text-white">@i</div>
+            }
+            else
+            {
+                <div class="text-center py-1 rounded fw-bold border border-secondary text-secondary">@i</div>
+            }         
         </div>
     }
 </div>

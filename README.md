@@ -8,7 +8,7 @@
 
 ## Tech Description:
 - As per requirement no DB is used, the questions data is read from a **JSON** file
-- The **JSON** file consists of **20 questions** per difficulty. Every time the quiz is started it takes **10 random** questions and also **shuffles** the answers.
+- The **JSON** file consists of **50 questions** per difficulty. Every time the quiz is started it takes **10 random** questions and also **shuffles** the answers.
 - The app uses typical **ASP.NET MVC** architecture with additional **Data layer** to access the data from the file and additional **Service** layer to operate with the data, state and time
 - As per requirement **Static class with static list and dictionary** were used to keep track of the answered questions between each question form submission (**initially I used sessions to keep the state as it is closer to real life app but after second reading of the requirements I noticed that it is not recommended. There is a branch that uses sessions:** https://github.com/bopzen/Sirma-Academy-SimpleQuizApp/tree/UseSessionsForStateKeeping)
 **BONUS:**

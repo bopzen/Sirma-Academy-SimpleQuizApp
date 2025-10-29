@@ -7,6 +7,17 @@
     Time Remaining: <span id="timer"></span>
 </div>
 
+<div class="d-flex justify-content-between align-items-center mb-3">
+    @for (int i = 1; i <= Model.TotalQuestions; i++)
+    {
+        var isCompleted = i <= Model.CurrentIndex;
+        <div class="flex-fill mx-1">
+            <div class="text-center py-1 rounded fw-bold @(isCompleted ? "bg-secondary text-white" : "border border-secondary text-secondary")">@i</div>
+        </div>
+    }
+</div>
+
+
 <form method="post" asp-action="Question">
     <p class="fw-bold">@Model.Question</p>
     <div class="mb-4">

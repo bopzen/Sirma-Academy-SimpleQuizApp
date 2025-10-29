@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SimpleQuizApp.Data.Models;
 using SimpleQuizApp.Models;
 using SimpleQuizApp.Services;
 
@@ -74,49 +75,12 @@ namespace SimpleQuizApp.Controllers
                 .OrderBy(q => QuizState.QuestionIds.IndexOf(q.Id))
                 .ToList();
 
-            var results = new List<QuizResultItem>();
-            int score = 0;
-
-            foreach (var q in questions)
-            {
-                if (!QuizState.Answers.TryGetValue(q.Id, out var userAnswer))
-                {
-                    userAnswer = "Not answered";
-                }
-                var correctAnswer = q.Options.First(o => o.IsCorrect).Answer;
-                bool isAnswerCorrect = userAnswer == correctAnswer;
-
-                if (isAnswerCorrect)
-                {
-                    score++;
-                }
-
-                results.Add(new QuizResultItem
-                {
-                    Question = q.Question,
-                    UserAnswer = userAnswer,
-                    CorrectAnswer = correctAnswer,
-                    IsCorrect = isAnswerCorrect
-                });
-            }
+            var results = EvaluateAnswers(questions);
+            int score = results.Where(r => r.IsCorrect == true).Count();
 
             var percentage = (double)score / (double)results.Count * 100;
-            string comment;
-            switch (percentage)
-            {
-                case < 50:
-                    comment = "Oh no, your general knowledge is bad!";
-                    break;
-                case < 75:
-                    comment = "Good Effort but you still need to improve!";
-                    break;
-                case < 90:
-                    comment = "Great Job! You almost got it right.";
-                    break;
-                default:
-                    comment = "Excellent, you are a genious!";
-                    break;
-            }
+
+            string comment = GenerateResultsComment(percentage);
 
             var model = new QuizResultViewModel
             {
@@ -129,6 +93,50 @@ namespace SimpleQuizApp.Controllers
             };
 
             return View(model);
+        }
+
+        private string GenerateResultsComment(double percentage)
+        {
+            string comment;
+            switch (percentage)
+            {
+                case < 50:
+                    comment = "Don't worry, keep learning and you'll improve!";
+                    break;
+                case < 75:
+                    comment = "Good effort! A little more practice and you'll get even better.";
+                    break;
+                case < 90:
+                    comment = "Great job! You're very close to perfection.";
+                    break;
+                default:
+                    comment = "Excellent work! You're a true genius!";
+                    break;
+            }
+            return comment;
+        }
+
+        private List<QuizResultItem> EvaluateAnswers(List<QuizQuestion> questions)
+        {
+            var results = new List<QuizResultItem>();
+
+            foreach (var q in questions)
+            {
+                if (!QuizState.Answers.TryGetValue(q.Id, out var userAnswer))
+                {
+                    userAnswer = "Not answered";
+                }
+                var correctAnswer = q.Options.First(o => o.IsCorrect).Answer;
+                bool isAnswerCorrect = userAnswer == correctAnswer;
+                results.Add(new QuizResultItem
+                {
+                    Question = q.Question,
+                    UserAnswer = userAnswer,
+                    CorrectAnswer = correctAnswer,
+                    IsCorrect = isAnswerCorrect
+                });
+            }
+            return results;
         }
     }
 }
